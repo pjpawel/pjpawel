@@ -1,4 +1,7 @@
     👋 Hi, I’m @pjpawel
+    
+    This program manages private chemistry lab journal. PyQt5 and Peewee are used.
+    
     👀 I’m interested in programming and chemistry.
     🌱 I’m currently learning flask and django frameworks.
     💞️ I’m looking for a job as junior python developer.
