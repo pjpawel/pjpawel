@@ -37,7 +37,7 @@ class Ui_Widget(object):
 
         # właściwości widżetu ###
         self.setWindowTitle("Dziennik Labolatoryjny")
-        self.resize(700, 300)
+        self.resize(1200, 600)
 
 class LoginDialog(QDialog):
     #Okno dialogowe logowania
