@@ -35,7 +35,7 @@ class Zadanie(BazaModel):
 def polacz():
     baza.connect()  # nawiązujemy połączenie z bazą
     baza.create_tables([Osoba, Zadanie], safe = True)  # tworzymy tabele
-    #ladujDane()  # wstawiamy początkowe dane
+    ladujDane()  # wstawiamy początkowe dane
     return True
 
 
@@ -52,12 +52,14 @@ def ladujDane():
     if Osoba.select().count() > 0:
         return
     osoby = ('adam', 'ewa')
-    zadania = ('Pierwsze zadanie', 'Drugie zadanie', 'Trzecie zadanie')
+    nazwy = ('Anilina', 'p-nitrofenol', 'tlenek glinu')
+    otrzymywanie = 'brak'
+    widmo = 'brak'
     for login in osoby:
         o = Osoba(login=login, haslo='123')
         o.save()
-        for tresc in zadania:
-            z = Zadanie(tresc=tresc, osoba=o)
+        for tresc in nazwy:
+            z = Zadanie(nazwa=tresc, osoba=o, otrzymywanie=otrzymywanie, widmo=widmo)
             z.save()
     baza.commit()
     baza.close()
@@ -77,9 +79,9 @@ def czytajDane(osoba):
             False])  # bool: czy usunąć?
     return zadania
 
-def dodajZadanie(osoba, nazwa):
+def dodajZadanie(osoba, nazwa, otrzymywanie):
     #Dodawanie nowego zadania
-    zadanie = Zadanie(nazwa = nazwa, osoba = osoba, otrzymywanie = "", widmo = "")
+    zadanie = Zadanie(nazwa = nazwa, osoba = osoba, otrzymywanie = otrzymywanie, widmo = "brak")
     zadanie.save()
     return [
         zadanie.id,
