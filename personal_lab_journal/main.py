@@ -30,8 +30,15 @@ class Zadania(QWidget, Ui_Widget):
             QMessageBox.critical(self, 'Błąd', 'Nazwa nie może być pusta.', QMessageBox.Ok)
             return
 
-        zadanie = baza.dodajZadanie(self.osoba, nazwa)
-        model.tabela.append(nazwa)
+        otrzymywanie, ok2 = QInputDialog.getMultiLineText(self, 'Nowy eksperyment', 'Opisz otrzymywanie')
+
+        if not ok2:
+            return
+        elif not otrzymywanie.strip():
+            otrzymywanie = 'brak'
+
+        zadanie = baza.dodajZadanie(self.osoba, nazwa, otrzymywanie)
+        model.tabela.append(zadanie)
         model.layoutChanged.emit()
         if len(model.tabela) == 1:
             self.odswiezWidok()
@@ -79,5 +86,5 @@ if __name__ == '__main__':
     model = TabModel(baza.pola)
     okno = Zadania()
     okno.show()
-    okno.move(350, 200)
+    okno.move(200, 100)
     sys.exit(app.exec_())
