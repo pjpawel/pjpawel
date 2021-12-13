@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @pjpawel
-- 👀 I’m interested in programming and chemistry.
+- 👀 I’m interested in programming and chemoinformatics.
 - 🌱 I’m currently learning pandas and seaborn library.
 - 💞️ I’m looking for a job as junior analyst/python developer.
 - 📫 To contact me, please send an e-mail to pawel.jan.podgorski@gmail.com
