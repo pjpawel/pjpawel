@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @pjpawel
-- 👀 I’m interested in programming and chemoinformatics.
+- 👀 I’m interested in software engineering and chemoinformatics.
 - 🌱 I’m using python and php.
 - 💞️ I’m working as Software Developer at Crido Business and Digital Services.
 - 📫 To contact me, please send an e-mail to pawel.jan.podgorski@gmail.com
