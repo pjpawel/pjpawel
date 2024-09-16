@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @pjpawel
 - 👀 I’m interested in software engineering and chemoinformatics.
 - 🌱 I’m using Python and PHP.
-- :floppy_disk: I’m working as Software Developer at Crido Business and Digital Services.
+- :floppy_disk: I’m working as Software Developer.
 - 📫 To contact me, please send an e-mail to pawel.jan.podgorski@gmail.com
 
 See my projects 
