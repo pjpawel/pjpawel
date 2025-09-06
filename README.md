@@ -1,12 +1,6 @@
 - 👋 Hi, I’m @pjpawel
-- 👀 I’m interested in software engineering and chemoinformatics.
-- 🌱 I’m using Python and PHP.
-- :floppy_disk: I’m working as Software Developer.
-- 📫 To contact me, please send an e-mail to pawel.jan.podgorski@gmail.com
-
-See my projects 
-- -> [LiteApi](https://github.com/liteapi/liteapi) -- Fast and elastic PHP framework
-- -> [Magis](https://github.com/pjpawel/Magis) -- PHP templates service
-- -> [MagisBundle](https://github.com/pjpawel/MagisBundle) -- Symfony bundle for extended PHP templates
+- 👀 I am interested in technologies such as Distributed Ledger Technology and IoT.
+- 🌱 I’m using PHP, Python and Rust.
+- 📫 To contact me, please send an e-mail to pjpawel@proton.me
 
 
